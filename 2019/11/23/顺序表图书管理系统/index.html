@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>顺序表图书管理系统 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="#顺序表图书管理系统 #include&amp;lt;iostream&amp;gt; #include&amp;lt;string.h&amp;gt; #include&amp;lt;stdlib.h&amp;gt; #include&amp;lt;stdio.h&amp;gt; #include&amp;lt;conio.h&amp;gt; #include&amp;lt;time.h&amp;gt;  #define N 1000000  using namespace std; in">
+<meta property="og:type" content="article">
+<meta property="og:title" content="顺序表图书管理系统">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;23&#x2F;%E9%A1%BA%E5%BA%8F%E8%A1%A8%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F&#x2F;index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="#顺序表图书管理系统 #include&amp;lt;iostream&amp;gt; #include&amp;lt;string.h&amp;gt; #include&amp;lt;stdlib.h&amp;gt; #include&amp;lt;stdio.h&amp;gt; #include&amp;lt;conio.h&amp;gt; #include&amp;lt;time.h&amp;gt;  #define N 1000000  using namespace std; in">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-11-22T17:04:14.611Z">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-顺序表图书管理系统" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/23/%E9%A1%BA%E5%BA%8F%E8%A1%A8%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" class="article-date">
+  <time datetime="2019-11-22T17:13:58.932Z" itemprop="datePublished">2019-11-23</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      顺序表图书管理系统
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#顺序表图书管理系统</p>
+<pre><code>#include&lt;iostream&gt;
+#include&lt;string.h&gt;
+#include&lt;stdlib.h&gt;
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+#include&lt;time.h&gt;
+
+#define N 1000000
+
+using namespace std;
+int count_num=0;
+struct book   //书的结构体
+{
+unsigned long long int key;//书号
+char name[30]; //书名
+char author[20];//作者
+unsigned int stock;   //现存量
+unsigned int total;//总库存量
+} b[N];//存储书的数组
+
+typedef struct node
+{
+int keynum;//结点关键值
+struct node *next;   //指向下一个结点指针
+
+}node;
+
+int count=0;
+
+node* create(int x)
+{
+    node *p,*pre,*head;
+    head=new node;
+    head-&gt;next=NULL;
+    pre=head;
+    for(int i=1;i&lt;x;i++)
+    {
+        p=new node;
+        p-&gt;keynum=i;
+        p-&gt;next=NULL;
+        pre-&gt;next=p;
+        pre=p;
+    }
+    return head;
+}
+int Search(int x)
+//在一个结点中查找元素，返回结点位置
+{
+    for(int i=0;i&lt;count_num;i++)
+    {
+        if(b[i].key==x)
+            return 1;
+        return 0;
+    }
+}
+
+void inset(node* head,int pos)
+{
+    int i;
+    node* p=head;
+    for(i=0;i&lt;pos-1;i++)
+    {
+        p=p-&gt;next;
+    }
+    node* q=new node;
+    q-&gt;keynum=i;
+    q-&gt;next=p-&gt;next;
+    p-&gt;next=q;
+}
+
+void Copy(book &amp;b,book k)
+//复制一个结点
+{
+b.key=k.key;
+strcpy(b.name,k.name);
+strcpy(b.author,k.author);
+b.stock=k.stock;
+b.total=k.total;
+}
+void save()
+//保存文件
+{
+FILE *fp;
+if((fp=fopen(&quot;com.txt&quot;,&quot;wb&quot;))==NULL)
+{
+cout&lt;&lt;&quot;创建文件失败！&quot;&lt;&lt;endl;
+getch();
+return;
+}
+for(int i=1;i&lt;=2;i++)
+{
+fprintf(fp,&quot;%d %s %s %d %d \n&quot;,b[i].key,b[i].name,b[i].author,b[i].stock,b[i].total);
+}
+fclose(fp);
+}
+
+void read()
+//读取文件
+{
+FILE *fp,fp1;
+if((fp=fopen(&quot;com.txt&quot;,&quot;rb&quot;))==NULL)
+{
+cout&lt;&lt;&quot;读取文件失败！&quot;&lt;&lt;endl;
+getchar();
+return;
+}
+for(int i=1;;i++)
+{
+    count_num++;
+if(fscanf(fp,&quot;%d%s%s%d%d&quot;,&amp;b[i].key,&amp;b[i].name,&amp;b[i].author,&amp;b[i].stock,&amp;b[i].total)==EOF)
+{
+
+break;
+}
+
+}
+fclose(fp);
+
+}
+void del(node* head,int x)
+{
+    node* p=head-&gt;next;
+    node* pre=head;
+    while(p!=NULL)
+    {
+        if(p-&gt;keynum==x)
+        {
+            pre-&gt;next=p-&gt;next;
+            delete(p);
+            p=pre-&gt;next;
+        }
+        else
+        {
+            pre=p;
+            p=p-&gt;next;
+        }
+    }
+}
+void Shownode(int x)
+//输出书的信息
+{
+for(int i=0;i&lt;=x;i++)
+{
+cout&lt;&lt;&quot;书号&quot;&lt;&lt;b[i].key&lt;&lt;&quot;,书名为《&quot;&lt;&lt;b[i].name&lt;&lt;&quot;》，作者为&quot;&lt;&lt;b[i].author&lt;&lt;&quot;,现存&quot;&lt;&lt;b[i].stock&lt;&lt;&quot;本，总量&quot;&lt;&lt;b[i].total&lt;&lt;&quot;本。&quot;&lt;&lt;endl;
+}
+}
+
+void InBookMess()
+//输入书的信息
+{
+    count_num++;
+//cout&lt;&lt;&quot;请输入书号：&quot;;cin&gt;&gt;bk.key;
+cout&lt;&lt;&quot;请输入书名：&quot;;cin&gt;&gt;b[count_num].name;
+cout&lt;&lt;&quot;请输入作者：&quot;;cin&gt;&gt;b[count_num].author;
+cout&lt;&lt;&quot;请输入总量：&quot;;cin&gt;&gt;b[count_num].total;
+b[count_num].stock=b[count_num].total;
+b[count_num].key=count_num;
+    cout&lt;&lt;&quot;书号&quot;&lt;&lt;b[count_num].key&lt;&lt;&quot;,书名为《&quot;&lt;&lt;b[count_num].name&lt;&lt;&quot;》，作者为&quot;&lt;&lt;b[count_num].author&lt;&lt;&quot;,现存&quot;&lt;&lt;b[count_num].stock&lt;&lt;&quot;本，总量&quot;&lt;&lt;b[count_num].total&lt;&lt;&quot;本。&quot;&lt;&lt;endl;  
+}
+int BorrowBook(int k)
+//借书
+{
+    int r=0;
+    r=Search(k);
+if(r==0)
+{
+cout&lt;&lt;&quot;你要借阅的书不存在。&quot;&lt;&lt;endl;
+return 0;
+}
+else 
+{
+        cout&lt;&lt;&quot;借书成功&quot;&lt;&lt;endl;
+        return 1;
+}
+
+}
+int ReturnBook(int k)
+//还书
+{
+int r;
+r=Search(k);
+if(r==0)
+{
+cout&lt;&lt;&quot;抱歉！不存在你要还的书。&quot;&lt;&lt;endl;
+return 0;
+}
+
+else
+{
+    //cout&lt;&lt;&quot;归还成功。&quot;&lt;&lt;endl;
+    return 0;
+    }
+
+}
+int menu_selete()
+{
+int choose;
+system(&quot;cls&quot;);
+cout&lt;&lt;&quot;**********图书管理系统************&quot;&lt;&lt;endl;
+cout&lt;&lt;&quot;1.新书入库\t 2.查找书籍&quot;&lt;&lt;endl;
+cout&lt;&lt;&quot;3.显示库存\t 4.借阅书籍&quot;&lt;&lt;endl;
+cout&lt;&lt;&quot;5.归还书籍\t   &quot;&lt;&lt;endl;
+cout&lt;&lt;&quot;7.退出系统&quot;&lt;&lt;endl;
+cout&lt;&lt;&quot;***********************************&quot;&lt;&lt;endl;
+cout&lt;&lt;&quot;请输入你需要的操作（1~7）：&quot;;
+do
+{
+cin&gt;&gt;choose;
+}while(choose&lt;1||choose&gt;7);
+return choose;
+}
+int main()
+{
+
+    int j;
+book k;
+read();
+int i;
+while(1)
+{    
+switch(menu_selete())
+{  
+ case 1:   
+system(&quot;cls&quot;);
+cout&lt;&lt;&quot;录入书信息：&quot;&lt;&lt;endl;
+clock_t start,stop;
+            double duration;
+            start=clock();
+InBookMess();
+stop=clock();
+duration=((double)(stop-start))/CLOCKS_PER_SEC;
+printf(&quot;该程序运行时间是：%f\n&quot;,duration);
+cout&lt;&lt;&quot;插入成功&quot;&lt;&lt;endl; 
+cout&lt;&lt;&quot;录入结束。&quot;&lt;&lt;endl;   
+cout&lt;&lt;&quot;当前书库的库存信息如下:&quot;&lt;&lt;endl;
+cout&lt;&lt;&quot;按任意键返回&quot;;
+getch();
+break;
+case 2:
+
+system(&quot;cls&quot;);
+cout&lt;&lt;&quot;查找书信息：&quot;&lt;&lt;endl;
+cout&lt;&lt;&quot;请输入书号：&quot;;
+
+cin&gt;&gt;j;
+            start=clock();
+     i = Search(j);
+  if(j!=0)
+  {
+      cout&lt;&lt;&quot;书号&quot;&lt;&lt;b[j].key&lt;&lt;&quot;,书名为《&quot;&lt;&lt;b[j].name&lt;&lt;&quot;》，作者为&quot;&lt;&lt;b[j].author&lt;&lt;&quot;,现存&quot;&lt;&lt;b[j].stock&lt;&lt;&quot;本，总量&quot;&lt;&lt;b[j].total&lt;&lt;&quot;本。&quot;&lt;&lt;endl;
+//ShowBookMess(r.pt-&gt;key[r.i]);
+stop=clock();
+duration=((double)(stop-start))/CLOCKS_PER_SEC;
+printf(&quot;该程序运行时间是：%f\n&quot;,duration);
+              }
+
+
+else
+{
+    cout&lt;&lt;&quot;你要查找的书号&quot;&lt;&lt;k.key&lt;&lt;&quot;不存在！&quot;&lt;&lt;endl;
+    cout&lt;&lt;&quot;查找结束&quot;&lt;&lt;endl;
+
+
+                }
+       cout&lt;&lt;&quot;按任意键返回&quot;;
+      getch();
+break;
+case 3:
+system(&quot;cls&quot;);
+cout&lt;&lt;&quot;-----------全部的书------------&quot;&lt;&lt;endl;
+Shownode(count_num);
+cout&lt;&lt;&quot;-----------显示完毕------------&quot;&lt;&lt;endl;
+cout&lt;&lt;&quot;按任意键返回&quot;;
+getch();
+break;
+case 4:
+system(&quot;cls&quot;);
+cout&lt;&lt;&quot;借书：&quot;&lt;&lt;endl;
+cout&lt;&lt;&quot;请输入书号：&quot;;
+cin&gt;&gt;k.key;
+if(BorrowBook(j))
+{
+cout&lt;&lt;&quot;借书成功。&quot;&lt;&lt;endl;
+}
+else
+cout&lt;&lt;&quot;借书失败。&quot;&lt;&lt;endl;
+cout&lt;&lt;&quot;按任意键返回&quot;;
+getch();
+break;
+case 5:
+system(&quot;cls&quot;);
+cout&lt;&lt;&quot;还书：&quot;&lt;&lt;endl;
+cout&lt;&lt;&quot;请输入书号：&quot;;
+cin&gt;&gt;j;
+    if(ReturnBook(j))
+{
+cout&lt;&lt;&quot;还书成功。&quot;&lt;&lt;endl;
+}
+else
+cout&lt;&lt;&quot;还书失败。&quot;&lt;&lt;endl;
+cout&lt;&lt;&quot;按任意键返回&quot;;
+
+cout&lt;&lt;&quot;按任意键返回&quot;;
+getch();
+break;
+case 7:
+  //  save(root);
+exit(0);
+}
+
+}
+
+}</code></pre>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/11/23/%E9%A1%BA%E5%BA%8F%E8%A1%A8%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" data-id="ck3voxdd60009hovb340ea2zh" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/11/25/Mavlink%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Mavlink通信协议
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/11/22/B%E6%A0%91%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">图书管理系统</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag">数据结构</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/" rel="tag">树莓派</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA/" rel="tag">水下机器人</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" style="font-size: 10px;">数据结构</a> <a href="/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/" style="font-size: 10px;">树莓派</a> <a href="/tags/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA/" style="font-size: 10px;">水下机器人</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/12/">December 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/11/">November 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/12/07/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%88%9D%E5%A7%8B%E5%AE%89%E8%A3%85/">水下机器人初始安装</a>
+          </li>
+        
+          <li>
+            <a href="/2019/12/07/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E5%85%A8%E6%93%8D%E4%BD%9C/">树莓派安全操作</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/25/Mavlink%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/">Mavlink通信协议</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/23/%E9%A1%BA%E5%BA%8F%E8%A1%A8%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">顺序表图书管理系统</a>
+          </li>
+        
+          <li>
+            <a href="/2019/11/22/B%E6%A0%91%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">图书管理系统</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
