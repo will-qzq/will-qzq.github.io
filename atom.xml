@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-12-12T12:54:24.958Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Ubuntu一些问题解决办法</title>
+    <link href="http://yoursite.com/2019/12/12/Ubuntu%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>http://yoursite.com/2019/12/12/Ubuntu%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</id>
+    <published>2019-12-12T12:47:18.000Z</published>
+    <updated>2019-12-12T12:54:24.958Z</updated>
+    
+    <content type="html"><![CDATA[<p>#Ubuntu一些问题解决链接<br>##关于无线联网总是显示连接断开</p><ul><li>使用NAT连接  </li><li>然后在服务中将有VM的全部启动<br>链接：<a href="https://blog.csdn.net/qq_36045385/article/details/81506540" target="_blank" rel="noopener">https://blog.csdn.net/qq_36045385/article/details/81506540</a><br>##关于无法连接U盘问题<br>大部分U盘首先在设置下设置共享<br>如果显示驱动错误需要更新驱动，但要注意的是，驱动精灵和其他的一些驱动软件是检测不出来的，所以必须使用驱动人生。<br>链接：<a href="https://blog.csdn.net/Behold1942/article/details/80065543" target="_blank" rel="noopener">https://blog.csdn.net/Behold1942/article/details/80065543</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#Ubuntu一些问题解决链接&lt;br&gt;##关于无线联网总是显示连接断开&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;使用NAT连接  &lt;/li&gt;
+&lt;li&gt;然后在服务中将有VM的全部启动&lt;br&gt;链接：&lt;a href=&quot;https://blog.csdn.net/qq_36045385/arti
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Ubuntu" scheme="http://yoursite.com/tags/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>水下机器人初始安装</title>
+    <link href="http://yoursite.com/2019/12/07/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%88%9D%E5%A7%8B%E5%AE%89%E8%A3%85/"/>
+    <id>http://yoursite.com/2019/12/07/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%88%9D%E5%A7%8B%E5%AE%89%E8%A3%85/</id>
+    <published>2019-12-07T14:34:02.000Z</published>
+    <updated>2019-12-07T14:49:27.202Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="水下机器人相关安装"><a href="#水下机器人相关安装" class="headerlink" title="水下机器人相关安装"></a>水下机器人相关安装</h1><h2 id="1、安装QGroundControl"><a href="#1、安装QGroundControl" class="headerlink" title="1、安装QGroundControl"></a>1、安装QGroundControl</h2><h3 id="地面站软件"><a href="#地面站软件" class="headerlink" title="地面站软件"></a>地面站软件</h3><ul><li>window  </li><li>ios  </li><li>Linux  </li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;水下机器人相关安装&quot;&gt;&lt;a href=&quot;#水下机器人相关安装&quot; class=&quot;headerlink&quot; title=&quot;水下机器人相关安装&quot;&gt;&lt;/a&gt;水下机器人相关安装&lt;/h1&gt;&lt;h2 id=&quot;1、安装QGroundControl&quot;&gt;&lt;a href=&quot;#1、安装QGr
+      
+    
+    </summary>
+    
+    
+    
+      <category term="水下机器人" scheme="http://yoursite.com/tags/%E6%B0%B4%E4%B8%8B%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>树莓派安全操作</title>
+    <link href="http://yoursite.com/2019/12/07/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E5%85%A8%E6%93%8D%E4%BD%9C/"/>
+    <id>http://yoursite.com/2019/12/07/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E5%85%A8%E6%93%8D%E4%BD%9C/</id>
+    <published>2019-12-07T13:58:01.000Z</published>
+    <updated>2019-12-07T14:29:34.868Z</updated>
+    
+    <content type="html"><![CDATA[<p>#树莓派操作安全<br>##树莓派是一个集成度非常高的产品<br>使用时不要用手去触碰芯片中间的位置，摸接口的两边如下图。因为手上带有静电，很容易把IO击穿，或损坏板子。<br><img src="/2019/12/07/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E5%85%A8%E6%93%8D%E4%BD%9C/%E6%A0%91%E8%8E%93%E6%B4%BE%E6%8B%BF%E6%B3%95.jpg" alt="hand"><br>如果放在桌面上，桌面上不能有金属制品。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#树莓派操作安全&lt;br&gt;##树莓派是一个集成度非常高的产品&lt;br&gt;使用时不要用手去触碰芯片中间的位置，摸接口的两边如下图。因为手上带有静电，很容易把IO击穿，或损坏板子。&lt;br&gt;&lt;img src=&quot;/2019/12/07/%E6%A0%91%E8%8E%93%E6%B4%B
+      
+    
+    </summary>
+    
+    
+    
+      <category term="树莓派" scheme="http://yoursite.com/tags/%E6%A0%91%E8%8E%93%E6%B4%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Mavlink通信协议</title>
+    <link href="http://yoursite.com/2019/11/25/Mavlink%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/"/>
+    <id>http://yoursite.com/2019/11/25/Mavlink%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE/</id>
+    <published>2019-11-25T15:41:07.385Z</published>
+    <updated>2019-11-25T15:42:41.478Z</updated>
+    
+    <content type="html"><![CDATA[<p>##Mavlink通信协议，中文<br><div class="row">    <embed src="C:/迅雷下载/mavlink通信协议.pdf" width="100%" height="550" type="application/pdf"></div></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;##Mavlink通信协议，中文&lt;br&gt;
+
+	&lt;div class=&quot;row&quot;&gt;
+    &lt;embed src=&quot;C:/迅雷下载/mavlink通信协议.pdf&quot; width=&quot;100%&quot; height=&quot;550&quot; type=&quot;application/pdf&quot;&gt;
+	&lt;/di
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>顺序表图书管理系统</title>
+    <link href="http://yoursite.com/2019/11/23/%E9%A1%BA%E5%BA%8F%E8%A1%A8%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://yoursite.com/2019/11/23/%E9%A1%BA%E5%BA%8F%E8%A1%A8%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</id>
+    <published>2019-11-22T17:13:58.932Z</published>
+    <updated>2019-11-22T17:04:14.611Z</updated>
+    
+    <content type="html"><![CDATA[<p>#顺序表图书管理系统</p><pre><code>#include&lt;iostream&gt;#include&lt;string.h&gt;#include&lt;stdlib.h&gt;#include&lt;stdio.h&gt;#include&lt;conio.h&gt;#include&lt;time.h&gt;#define N 1000000using namespace std;int count_num=0;struct book   //书的结构体{unsigned long long int key;//书号char name[30]; //书名char author[20];//作者unsigned int stock;   //现存量unsigned int total;//总库存量} b[N];//存储书的数组typedef struct node{int keynum;//结点关键值struct node *next;   //指向下一个结点指针}node;int count=0;node* create(int x){    node *p,*pre,*head;    head=new node;    head-&gt;next=NULL;    pre=head;    for(int i=1;i&lt;x;i++)    {        p=new node;        p-&gt;keynum=i;        p-&gt;next=NULL;        pre-&gt;next=p;        pre=p;    }    return head;}int Search(int x)//在一个结点中查找元素，返回结点位置{    for(int i=0;i&lt;count_num;i++)    {        if(b[i].key==x)            return 1;        return 0;    }}void inset(node* head,int pos){    int i;    node* p=head;    for(i=0;i&lt;pos-1;i++)    {        p=p-&gt;next;    }    node* q=new node;    q-&gt;keynum=i;    q-&gt;next=p-&gt;next;    p-&gt;next=q;}void Copy(book &amp;b,book k)//复制一个结点{b.key=k.key;strcpy(b.name,k.name);strcpy(b.author,k.author);b.stock=k.stock;b.total=k.total;}void save()//保存文件{FILE *fp;if((fp=fopen(&quot;com.txt&quot;,&quot;wb&quot;))==NULL){cout&lt;&lt;&quot;创建文件失败！&quot;&lt;&lt;endl;getch();return;}for(int i=1;i&lt;=2;i++){fprintf(fp,&quot;%d %s %s %d %d \n&quot;,b[i].key,b[i].name,b[i].author,b[i].stock,b[i].total);}fclose(fp);}void read()//读取文件{FILE *fp,fp1;if((fp=fopen(&quot;com.txt&quot;,&quot;rb&quot;))==NULL){cout&lt;&lt;&quot;读取文件失败！&quot;&lt;&lt;endl;getchar();return;}for(int i=1;;i++){    count_num++;if(fscanf(fp,&quot;%d%s%s%d%d&quot;,&amp;b[i].key,&amp;b[i].name,&amp;b[i].author,&amp;b[i].stock,&amp;b[i].total)==EOF){break;}}fclose(fp);}void del(node* head,int x){    node* p=head-&gt;next;    node* pre=head;    while(p!=NULL)    {        if(p-&gt;keynum==x)        {            pre-&gt;next=p-&gt;next;            delete(p);            p=pre-&gt;next;        }        else        {            pre=p;            p=p-&gt;next;        }    }}void Shownode(int x)//输出书的信息{for(int i=0;i&lt;=x;i++){cout&lt;&lt;&quot;书号&quot;&lt;&lt;b[i].key&lt;&lt;&quot;,书名为《&quot;&lt;&lt;b[i].name&lt;&lt;&quot;》，作者为&quot;&lt;&lt;b[i].author&lt;&lt;&quot;,现存&quot;&lt;&lt;b[i].stock&lt;&lt;&quot;本，总量&quot;&lt;&lt;b[i].total&lt;&lt;&quot;本。&quot;&lt;&lt;endl;}}void InBookMess()//输入书的信息{    count_num++;//cout&lt;&lt;&quot;请输入书号：&quot;;cin&gt;&gt;bk.key;cout&lt;&lt;&quot;请输入书名：&quot;;cin&gt;&gt;b[count_num].name;cout&lt;&lt;&quot;请输入作者：&quot;;cin&gt;&gt;b[count_num].author;cout&lt;&lt;&quot;请输入总量：&quot;;cin&gt;&gt;b[count_num].total;b[count_num].stock=b[count_num].total;b[count_num].key=count_num;    cout&lt;&lt;&quot;书号&quot;&lt;&lt;b[count_num].key&lt;&lt;&quot;,书名为《&quot;&lt;&lt;b[count_num].name&lt;&lt;&quot;》，作者为&quot;&lt;&lt;b[count_num].author&lt;&lt;&quot;,现存&quot;&lt;&lt;b[count_num].stock&lt;&lt;&quot;本，总量&quot;&lt;&lt;b[count_num].total&lt;&lt;&quot;本。&quot;&lt;&lt;endl;  }int BorrowBook(int k)//借书{    int r=0;    r=Search(k);if(r==0){cout&lt;&lt;&quot;你要借阅的书不存在。&quot;&lt;&lt;endl;return 0;}else {        cout&lt;&lt;&quot;借书成功&quot;&lt;&lt;endl;        return 1;}}int ReturnBook(int k)//还书{int r;r=Search(k);if(r==0){cout&lt;&lt;&quot;抱歉！不存在你要还的书。&quot;&lt;&lt;endl;return 0;}else{    //cout&lt;&lt;&quot;归还成功。&quot;&lt;&lt;endl;    return 0;    }}int menu_selete(){int choose;system(&quot;cls&quot;);cout&lt;&lt;&quot;**********图书管理系统************&quot;&lt;&lt;endl;cout&lt;&lt;&quot;1.新书入库\t 2.查找书籍&quot;&lt;&lt;endl;cout&lt;&lt;&quot;3.显示库存\t 4.借阅书籍&quot;&lt;&lt;endl;cout&lt;&lt;&quot;5.归还书籍\t   &quot;&lt;&lt;endl;cout&lt;&lt;&quot;7.退出系统&quot;&lt;&lt;endl;cout&lt;&lt;&quot;***********************************&quot;&lt;&lt;endl;cout&lt;&lt;&quot;请输入你需要的操作（1~7）：&quot;;do{cin&gt;&gt;choose;}while(choose&lt;1||choose&gt;7);return choose;}int main(){    int j;book k;read();int i;while(1){    switch(menu_selete()){   case 1:   system(&quot;cls&quot;);cout&lt;&lt;&quot;录入书信息：&quot;&lt;&lt;endl;clock_t start,stop;            double duration;            start=clock();InBookMess();stop=clock();duration=((double)(stop-start))/CLOCKS_PER_SEC;printf(&quot;该程序运行时间是：%f\n&quot;,duration);cout&lt;&lt;&quot;插入成功&quot;&lt;&lt;endl; cout&lt;&lt;&quot;录入结束。&quot;&lt;&lt;endl;   cout&lt;&lt;&quot;当前书库的库存信息如下:&quot;&lt;&lt;endl;cout&lt;&lt;&quot;按任意键返回&quot;;getch();break;case 2:system(&quot;cls&quot;);cout&lt;&lt;&quot;查找书信息：&quot;&lt;&lt;endl;cout&lt;&lt;&quot;请输入书号：&quot;;cin&gt;&gt;j;            start=clock();     i = Search(j);  if(j!=0)  {      cout&lt;&lt;&quot;书号&quot;&lt;&lt;b[j].key&lt;&lt;&quot;,书名为《&quot;&lt;&lt;b[j].name&lt;&lt;&quot;》，作者为&quot;&lt;&lt;b[j].author&lt;&lt;&quot;,现存&quot;&lt;&lt;b[j].stock&lt;&lt;&quot;本，总量&quot;&lt;&lt;b[j].total&lt;&lt;&quot;本。&quot;&lt;&lt;endl;//ShowBookMess(r.pt-&gt;key[r.i]);stop=clock();duration=((double)(stop-start))/CLOCKS_PER_SEC;printf(&quot;该程序运行时间是：%f\n&quot;,duration);              }else{    cout&lt;&lt;&quot;你要查找的书号&quot;&lt;&lt;k.key&lt;&lt;&quot;不存在！&quot;&lt;&lt;endl;    cout&lt;&lt;&quot;查找结束&quot;&lt;&lt;endl;                }       cout&lt;&lt;&quot;按任意键返回&quot;;      getch();break;case 3:system(&quot;cls&quot;);cout&lt;&lt;&quot;-----------全部的书------------&quot;&lt;&lt;endl;Shownode(count_num);cout&lt;&lt;&quot;-----------显示完毕------------&quot;&lt;&lt;endl;cout&lt;&lt;&quot;按任意键返回&quot;;getch();break;case 4:system(&quot;cls&quot;);cout&lt;&lt;&quot;借书：&quot;&lt;&lt;endl;cout&lt;&lt;&quot;请输入书号：&quot;;cin&gt;&gt;k.key;if(BorrowBook(j)){cout&lt;&lt;&quot;借书成功。&quot;&lt;&lt;endl;}elsecout&lt;&lt;&quot;借书失败。&quot;&lt;&lt;endl;cout&lt;&lt;&quot;按任意键返回&quot;;getch();break;case 5:system(&quot;cls&quot;);cout&lt;&lt;&quot;还书：&quot;&lt;&lt;endl;cout&lt;&lt;&quot;请输入书号：&quot;;cin&gt;&gt;j;    if(ReturnBook(j)){cout&lt;&lt;&quot;还书成功。&quot;&lt;&lt;endl;}elsecout&lt;&lt;&quot;还书失败。&quot;&lt;&lt;endl;cout&lt;&lt;&quot;按任意键返回&quot;;cout&lt;&lt;&quot;按任意键返回&quot;;getch();break;case 7:  //  save(root);exit(0);}}}</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;#顺序表图书管理系统&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;string.h&amp;gt;
+#include&amp;lt;stdlib.h&amp;gt;
+#include&amp;lt;stdio.h&amp;gt;
+#include&amp;lt;
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>图书管理系统</title>
+    <link href="http://yoursite.com/2019/11/22/B%E6%A0%91%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/"/>
+    <id>http://yoursite.com/2019/11/22/B%E6%A0%91%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/</id>
+    <published>2019-11-21T17:18:21.620Z</published>
+    <updated>2019-12-07T14:23:07.533Z</updated>
+    
+    <content type="html"><![CDATA[<p>##图书管理系统</p><pre><code>#include&lt;iostream&gt;#include&lt;string.h&gt;#include&lt;stdlib.h&gt;#include&lt;stdio.h&gt;#include&lt;conio.h&gt;#include&lt;time.h&gt;using namespace std;#define N 1000000#define m 5   //B树的阶struct book   //书的结构体{unsigned long long int key;//书号char name[30]; //书名char author[20];//作者unsigned int stock;   //现存量unsigned int total;//总库存量} b[N];//存储书的数组typedef struct BTreeNode{int keynum;//结点关键值/关键码个数struct BTreeNode *parent;   //父结点指针book key[m+1]; //一个结点中最多存放的书的个数，k[0]未用struct BTreeNode *ptr[m+1];   //子树结点数组指针}BTNode;BTNode *root=NULL;typedef struct //搜素结果的三元组定义{BTNode *pt;  //结点地址指针int i;   //结点中关键码序号int tag;   //tag=0不成功，tag=1成功}Result;int Search(BTNode *p,book k)//在一个结点中查找元素，返回结点位置{if(!p)return -1;int i=0;for(i=0; i&lt;p-&gt;keynum&amp;&amp;p-&gt;key[i+1].key&lt;=k.key; i++);return i;}Result SearchBTree(BTNode *T,book k)//在m阶B树上查找关键字K，返回结果（pt,i,tag）{BTNode *p,*q;int i;Result R;p=T;q=NULL;int found=0;i=0;while(p&amp;&amp;!found){i=Search(p,k);if(i&gt;0&amp;&amp;p-&gt;key[i].key==k.key)found=1;else{q=p;p=p-&gt;ptr[i];}}if(found){R.pt=p;R.i=i;R.tag=1;   //找到，成功}else{R.pt=q;R.i=i;R.tag=0;//不成功}return R;}void Copy(book &amp;b,book k)//复制一个结点{b.key=k.key;strcpy(b.name,k.name);strcpy(b.author,k.author);b.stock=k.stock;b.total=k.total;}void Insert(BTNode* &amp;q,int i,book x,BTNode *ap)//插入一条记录{int n=q-&gt;keynum;for(int j=n;j&gt;i;j--){Copy(q-&gt;key[j+1],q-&gt;key[j]);q-&gt;ptr[j+1]=q-&gt;ptr[j];}Copy(q-&gt;key[i+1],x);q-&gt;ptr[i+1]=ap;if(ap)ap-&gt;parent=q;q-&gt;keynum++;}void split(BTNode* &amp;q,int s,BTNode *&amp;ap)//分裂结点{int i,j,n=q-&gt;keynum;ap=(BTNode*)malloc(sizeof(BTNode));ap-&gt;ptr[0]=q-&gt;ptr[s];for(i=s+1,j=1;i&lt;=n;i++,j++){Copy(ap-&gt;key[j],q-&gt;key[i]);ap-&gt;ptr[j]=q-&gt;ptr[i];}ap-&gt;keynum=n-s;ap-&gt;parent=q-&gt;parent;for(i=0;i&lt;=n-s;i++){if(ap-&gt;ptr[i])ap-&gt;ptr[i]-&gt;parent=ap;}q-&gt;keynum=s-1;}void NewRoot(BTNode* &amp;T,BTNode* p,book x,BTNode *ap)//生成一个新的树根结点{T=(BTNode*)malloc(sizeof(BTNode));T-&gt;keynum=1;  //设置当前结点的元素个数T-&gt;ptr[0]=p;  //设置左边结点的树根T-&gt;ptr[1]=ap; //设置右边的树根Copy(T-&gt;key[1],x);   //将x元素的结点值复制到T的第一个元素中if(p) //当孩子不空时就设置当前结点为孩子的双亲p-&gt;parent=T;if(ap)ap-&gt;parent=T;T-&gt;parent=NULL;   //当前结点双亲为空}void ShowBTNode(BTNode *p)//输出书的信息{for(int i=1;i&lt;=p-&gt;keynum;i++){cout&lt;&lt;&quot;书号&quot;&lt;&lt;p-&gt;key[i].key&lt;&lt;&quot;,书名为《&quot;&lt;&lt;p-&gt;key[i].name&lt;&lt;&quot;》，作者为&quot;&lt;&lt;p-&gt;key[i].author&lt;&lt;&quot;,现存&quot;&lt;&lt;p-&gt;key[i].stock&lt;&lt;&quot;本，总量&quot;&lt;&lt;p-&gt;key[i].total&lt;&lt;&quot;本。&quot;&lt;&lt;endl;}}void ShowBookMess(book bk)//显示书的信息，参数是book类型{cout&lt;&lt;&quot;书号&quot;&lt;&lt;bk.key&lt;&lt;&quot;,书名为《&quot;&lt;&lt;bk.name&lt;&lt;&quot;》，作者为&quot;&lt;&lt;bk.author&lt;&lt;&quot;,现存&quot;&lt;&lt;bk.stock&lt;&lt;&quot;本，总量&quot;&lt;&lt;bk.total&lt;&lt;&quot;本。&quot;&lt;&lt;endl;}int InsertBTNode(BTNode *&amp;T,book k)//插入新书，在B树中插入新结点//在m阶B树T上结点*q的key[i]与k[i+1]之间插入关键字k;{BTNode *ap;Result r;BTNode *q;int i;char addnum;int finished,needNewRoot,s;book x;if(!T)   //root为NULL时，将book存储在根结点{NewRoot(T,NULL,k,NULL);}else{r=SearchBTree(T,k);  //查找元素k在树中的位置q=r.pt;i=r.i;if(r.tag==1)//有相同的书号{if(strcmp(q-&gt;key[i].name,k.name)!=0)   //当书名不等时{cout&lt;&lt;&quot;已存在书号为&quot;&lt;&lt;q-&gt;key[i].key&lt;&lt;&quot;的书，录入失败，请重新编号！&quot;&lt;&lt;endl;ShowBookMess(q-&gt;key[i]);return 0;}if(strcmp(q-&gt;key[i].name,k.name)==0){cout&lt;&lt;&quot;该书已存在，是否增加其总存储量（y/n）:&quot;;cin&gt;&gt;addnum;if(addnum==&apos;Y&apos;||addnum==&apos;y&apos;){q-&gt;key[i].total+=k.total;q-&gt;key[i].stock+=k.stock;cout&lt;&lt;&quot;增加总量后书的信息如下:&quot;&lt;&lt;endl;}else{cout&lt;&lt;&quot;该书的信息如下：&quot;&lt;&lt;endl;}ShowBookMess(q-&gt;key[i]);return 0;}}x=k;   //没有相同的书号时，插入ap=NULL;finished=needNewRoot=0;while(!needNewRoot&amp;&amp;!finished){Insert(q,i,x,ap);  //插入结点if(q-&gt;keynum&lt;m)finished=1;   //插入完成else{ //分裂结点*qs=(m+1)/2;split(q,s,ap);x=q-&gt;key[s];if(q-&gt;parent)   //在双亲结点*q中查找x的插入位置{q=q-&gt;parent;i=Search(q,x);}else{ needNewRoot=1;}}}if(needNewRoot)NewRoot(T,q,x,ap);   //生成新根结点*T,q和ap为子树指针}return 1;}void InBookMess(book &amp;bk)//输入书的信息{cout&lt;&lt;&quot;请输入书号：&quot;;cin&gt;&gt;bk.key;cout&lt;&lt;&quot;请输入书名：&quot;;cin&gt;&gt;bk.name;cout&lt;&lt;&quot;请输入作者：&quot;;cin&gt;&gt;bk.author;cout&lt;&lt;&quot;请输入总量：&quot;;cin&gt;&gt;bk.total;bk.stock=bk.total;}void display(BTNode *T)//显示整棵树的信息{int i=0;if(T){ShowBTNode(T);   //显示该结点的全部值for(i=0;i&lt;=T-&gt;keynum;i++)//递归显示每个结点{if(T-&gt;ptr[i])display(T-&gt;ptr[i]);}}}int BorrowBook(BTNode *T,book k)//借书{Result r=SearchBTree(T,k);if(r.tag==0){cout&lt;&lt;&quot;你要借阅的书不存在。&quot;&lt;&lt;endl;return 0;}if(r.pt-&gt;key[r.i].stock&lt;1){cout&lt;&lt;&quot;你要借阅的书已经借完。&quot;&lt;&lt;endl;return 0;}r.pt-&gt;key[r.i].stock--;return 1;}int ReturnBook(BTNode *T,book k)//还书{//int number;Result r=SearchBTree(T,k);if(r.tag==0){cout&lt;&lt;&quot;抱歉！不存在你要还的书。&quot;&lt;&lt;endl;return 0;}if(r.pt-&gt;key[r.i].stock&gt;=r.pt-&gt;key[r.i].total){cout&lt;&lt;&quot;该书无借出。&quot;&lt;&lt;endl;return 0;}elser.pt-&gt;key[r.i].stock++;}void save(BTNode *p)//保存文件{FILE *fp;if((fp=fopen(&quot;com.txt&quot;,&quot;wb&quot;))==NULL){cout&lt;&lt;&quot;创建文件失败！&quot;&lt;&lt;endl;getch();return;}for(int i=1;i&lt;=2;i++){fprintf(fp,&quot;%d %s %s %d %d \n&quot;,p-&gt;key[i].key,p-&gt;key[i].name,p-&gt;key[i].author,p-&gt;key[i].stock,p-&gt;key[i].total);}fclose(fp);}void read()//读取文件{FILE *fp,fp1;if((fp=fopen(&quot;com.txt&quot;,&quot;rb&quot;))==NULL){cout&lt;&lt;&quot;读取文件失败！&quot;&lt;&lt;endl;getchar();return;}for(int i=1;;i++){if(fscanf(fp,&quot;%d%s%s%d%d&quot;,&amp;b[i].key,&amp;b[i].name,&amp;b[i].author,&amp;b[i].stock,&amp;b[i].total)==EOF){break;}InsertBTNode(root,b[i]);}fclose(fp);}void output(BTNode* T,int n)   //凹入法输出这课树{int i;if(T==NULL)return;/*if(n!=1){for(i=1;i&lt;n;i++)  cout&lt;&lt;&quot;----&quot;;}*/for(int j=1;j&lt;=T-&gt;keynum;j++){cout&lt;&lt;T-&gt;key[j].key&lt;&lt;endl;cout&lt;&lt;&quot;----&quot;;}for(i=0;i&lt;=T-&gt;keynum;i++){if(T-&gt;ptr[i])output(T-&gt;ptr[i],n++);}}int menu_selete(){int choose;system(&quot;cls&quot;);cout&lt;&lt;&quot;**********图书管理系统************&quot;&lt;&lt;endl;cout&lt;&lt;&quot;1.新书入库\t 2.查找书籍&quot;&lt;&lt;endl;cout&lt;&lt;&quot;3.显示库存\t 4.借阅书籍&quot;&lt;&lt;endl;cout&lt;&lt;&quot;5.归还书籍\t   &quot;&lt;&lt;endl;cout&lt;&lt;&quot;7.退出系统&quot;&lt;&lt;endl;cout&lt;&lt;&quot;***********************************&quot;&lt;&lt;endl;cout&lt;&lt;&quot;请输入你需要的操作（1~7）：&quot;;do{cin&gt;&gt;choose;}while(choose&lt;1||choose&gt;7);return choose;}int main(){book k;Result r;read();while(1){    switch(menu_selete()){case 1:system(&quot;cls&quot;);cout&lt;&lt;&quot;录入书信息：&quot;&lt;&lt;endl;InBookMess(k);InsertBTNode(root,k);cout&lt;&lt;&quot;录入结束。&quot;&lt;&lt;endl;save(root);cout&lt;&lt;&quot;当前书库的库存信息如下:&quot;&lt;&lt;endl;display(root);cout&lt;&lt;&quot;按任意键返回&quot;;getch();break;case 2:system(&quot;cls&quot;);cout&lt;&lt;&quot;查找书信息：&quot;&lt;&lt;endl;cout&lt;&lt;&quot;请输入书号：&quot;;cin&gt;&gt;k.key;      clock_t start,stop;            double duration;            start=clock();r=SearchBTree(root,k);stop=clock();duration=((double)(stop-start))/CLOCKS_PER_SEC;printf(&quot;该程序运行时间是：%f\n&quot;,duration);if(r.tag==1){ShowBookMess(r.pt-&gt;key[r.i]);}elsecout&lt;&lt;&quot;你要查找的书号&quot;&lt;&lt;k.key&lt;&lt;&quot;不存在！&quot;&lt;&lt;endl;cout&lt;&lt;&quot;查找结束&quot;&lt;&lt;endl;cout&lt;&lt;&quot;按任意键返回&quot;;getch();break;case 3:system(&quot;cls&quot;);cout&lt;&lt;&quot;-----------全部的书------------&quot;&lt;&lt;endl;display(root);cout&lt;&lt;&quot;-----------显示完毕------------&quot;&lt;&lt;endl;cout&lt;&lt;&quot;按任意键返回&quot;;getch();break;case 4:system(&quot;cls&quot;);cout&lt;&lt;&quot;借书：&quot;&lt;&lt;endl;cout&lt;&lt;&quot;请输入书号：&quot;;cin&gt;&gt;k.key;if(BorrowBook(root,k)){cout&lt;&lt;&quot;借书成功。&quot;&lt;&lt;endl;}elsecout&lt;&lt;&quot;借书失败。&quot;&lt;&lt;endl;cout&lt;&lt;&quot;按任意键返回&quot;;getch();break;case 5:system(&quot;cls&quot;);cout&lt;&lt;&quot;还书：&quot;&lt;&lt;endl;cout&lt;&lt;&quot;请输入书号：&quot;;cin&gt;&gt;k.key;if(ReturnBook(root,k)){cout&lt;&lt;&quot;归还成功。&quot;&lt;&lt;endl;}elsecout&lt;&lt;&quot;归还失败。&quot;&lt;&lt;endl;cout&lt;&lt;&quot;按任意键返回&quot;;getch();break;case 6:system(&quot;cls&quot;);cout&lt;&lt;&quot;凹入法显示树：&quot;&lt;&lt;endl;output(root,1);cout&lt;&lt;&quot;按任意键返回&quot;;getch();break;case 7:save(root);exit(0);}}}</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;##图书管理系统&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;string.h&amp;gt;
+#include&amp;lt;stdlib.h&amp;gt;
+#include&amp;lt;stdio.h&amp;gt;
+#include&amp;lt;co
+      
+    
+    </summary>
+    
+    
+    
+      <category term="数据结构" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/11/08/hello-world/"/>
+    <id>http://yoursite.com/2019/11/08/hello-world/</id>
+    <published>2019-11-08T14:04:30.465Z</published>
+    <updated>2019-11-08T14:04:30.465Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
